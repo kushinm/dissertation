@@ -123,6 +123,7 @@
 \RequirePackage[super,comma,numbers]{natbib}
 \renewcommand{\bibnumfmt}[1]{[#1]}
 \RequirePackage[palatino]{quotchap}
+\RequirePackage{apacite}
 \renewcommand*{\chapterheadstartvskip}{\vspace*{-0.5\baselineskip}}
 \renewcommand*{\chapterheadendvskip}{\vspace{1.3\baselineskip}}
 
@@ -285,6 +286,7 @@
     \clearpage
     \bibliography{references}
     \addcontentsline{toc}{chapter}{References}
-    \bibliographystyle{apalike2}
+    % \bibliographystyle{apalike2}
+    \bibliographystyle{apacite}
     \include{endmatter/colophon}
 }

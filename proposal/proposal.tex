@@ -103,15 +103,15 @@ These results are taken as a proof-of-concept of how assocations between percept
 \begin{figure}[htpb!]
     \centering
     \includegraphics[width=.8\linewidth]{proposal/figures/chap1.pdf}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{(A) Our model for representing color semantic space by applying dimensionality reduction techniques on matrices of color-concept association rating judgements and using colorimetric regression models to characterize the dimensions of the space. (B) Correlations between true ratings and predicted ratings using our model for new colors and concepts. Overall, the model is effective for most colors and concepts.}
+    \label{fig:chap1}
 \end{figure}
 
 \begin{figure}[htpb!]
     \centering
     \includegraphics[width=.8\linewidth]{proposal/figures/chap1b.pdf}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{(A) Human and LLM testing paradigms for collecting color-concept association ratings. (B) Corelation between true ratings and GPT-4 ratings for a variety of abstract and concrete concepts. GPT-4 fails to reach human levels of consistency but is as effective of competing approaches. }
+    \label{fig:chap1b}
 \end{figure}
 
 \begin{tcolorbox}[
@@ -139,8 +139,8 @@ The best performing DNN models were found to be models trained to represent the 
 \begin{figure}[htpb!]
     \centering
     \includegraphics[width=.8\linewidth]{proposal/figures/chap2.pdf}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{Analysis schematic showing the DNN, perceptual and cognitive features used to predict human similarity judgements in (A) line drawings of objects and (B) simple shape contours. (C) coordinates of drawings of each category (bird, car, chair, dog) after performing dimension reduction on the embeddings derived from triplet similarity judgements. (D) The ability of perceptual and cognitive features (top), vision models (bottom), and joint models combining vision model and cognitive/perceptual representations (bottom) in predicting human similarity judgements. Only when DNN features are combined with our hypothesized factors do models accurately predict human ratings.  } 
+    \label{fig:chap2}
 \end{figure}
 
 
@@ -173,8 +173,8 @@ This chapter constitutes a key example of how abstract representations, here ass
 \begin{figure}[htpb!]
     \centering
     \includegraphics[width=.8\linewidth]{proposal/figures/chap3.pdf}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{(A) The task from Mukherjee et al. (2021). Participants had to choose which bar to assign each concept to. (B) Human patterns of color-to-concept mapping for palettes that vary in semantic discriminability and the ability of our models to predict those patterns. (C) Both abstract and concrete concepts can be easy or hard to communicate using colors depending on the set of concepts and colors in scope. }
+    \label{fig:chap3}
 \end{figure}
 
 
@@ -209,16 +209,16 @@ A key challenge for a general theory of visual abstraction will be to explain th
 \begin{figure}[htpb!]
     \centering
     \includegraphics[width=.8\linewidth]{proposal/figures/chap4.pdf}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{(A) Interface for drawing production task from Mukherjee et al. (2023). (B) Interface for the drawing recognition task from Mukherjee et al. (2023). (C) The likelihood of drawings being labeled as close semantic neighbors as a function of different abstraction levels (drawing time) in humans and vision models. (D) How accurately humans label drawings made by other humans or a CLIP-based sketcher model (CLIPasso) at different abstraction levels. How similar are the labels produced by human guessers when looking at human vs. machine made drawings. While both human-made and machine-made drawings are recognized at about the same rate across abstraction levels, the specific labels that are applied to them become more divergent the most abstract the drawing.}
+    \label{fig:chap4}
 \end{figure}
 
 
 \begin{figure}[htpb!]
     \centering
     \includegraphics[width=.8\linewidth]{proposal/figures/chap4b.pdf}
-    \caption{Caption}
-    \label{fig:enter-label}
+    \caption{(A) Our new drawing dataset in terms of its total number of drawings and semantic diversity relative to existing datasets. (B) Variability in recognizability of different concepts. The x-axis is each of the 1,854 concepts in the THINGS dataset, the y-axis is how often drawings of that concept are labeled using the label that was shown to the sketcher when asked to draw it.}
+    \label{fig:chap4b}
 \end{figure}
 
 
@@ -239,6 +239,15 @@ The goal is to submit the latter manuscript this semester.
 
 \section*{\textbf{Part 3: Neural loci for visual abstractions}}
 
+What is the neural basis for visual abstraction? 
+Before building neural computational models that support the range of behaviors described thus far, a primary question concerns \textit{where} these representations might lie in the human brain.
+Is there a highly localist seat of visual abstraction or is the neural code highly distributed reflected the hypothesized cross-modal nature of the representations that support the phenomenon.
+The last set of experiments will focus in once more on the color-concept associations described in chapters 1 and 3 and aim to estimate the neural loci of these associations.
+We will estimate color-color and color-concept associations by using a 2 alternative forced-choice task paradigm where people will be asked to choose which of two color patches or two concepts is most similar to a target color patch.
+The hypothesis is that the first variant of the task will allow us to decode representations that support purely perceptual similiarty among colors while the second will allow decoding more abstract and cross-modal representations.
+Using recent statistical tools for decoding distributed neural signals, I hope to show where these representations might lie and whether they are highly concentrated in one cortical region or whether there are measurably distinct, distributed codes across individuals.
+
+
 \section*{Chapter 5: Where are visual abstractions housed in the brain?}
 
 \begin{tcolorbox}[
@@ -256,9 +265,15 @@ Early in the new year, the aim is to begin neural data collection and conduct th
 
 \section*{Conclusion}
 
+Each of the studies covered in this dissertation tackle distinct behaviors, across distinct domains, in human versus artificial minds.
+However, the findings all speak to the nature of abstract visual representations and how they might be structured and deployed in visual communication generally.
+Understanding how we learn to represent and produce visual abstractions has implications for a host of behaviors beyond the ones covered here, which span reasoning, learning, and communication.
+Having stronger cognitive theories of visual abstraction will allow us to also better use it as a key benchmarking target in the evolving landscape of artificial intelligence models.
+
+In this closing chapter, I will synthesize the findings from each chapter and lay out what a general cognitive theory of visual abstraction might look like and how it might lead to progress in fields beyond psychology including artificial intelligence and education.
 
 % \clearpage
-\bibliography{proposal/proposal}
+% \bibliography{proposal/proposal}
 % \addcontentsline{toc}{chapter}{References}
 \bibliographystyle{apacite}
 
